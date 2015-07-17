@@ -149,7 +149,8 @@ img.pic{
     max-height: 4em;
     color: #FFFFFF;
     font-size: 7em;
-    background-image: url(nature.jpg);
+    background-image: url(mountain.jpg);
+    /*background-image: url(nature.jpg);*/
     background-size:cover;
     background-position: bottom;
          /*#39ADD9;*/
@@ -160,7 +161,8 @@ img.pic{
 .banner_bot{
     height: 15vh;
     color: #FFFFFF;
-    background-image: url(nature.jpg);
+    background-image: url(mountain.jpg);
+    /*background-image: url(nature.jpg);*/
     background-size:cover;
     background-position: bottom;
          /*#39ADD9;*/
