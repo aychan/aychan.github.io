@@ -43,6 +43,7 @@ p.para{
     margin-top: 30vh;
     display: table;
     opacity: 1;
+    text-align: center;
 }
 .side-bar:hover .side-bar-button-container{
      width: 100%;
