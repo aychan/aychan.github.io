@@ -36,6 +36,7 @@ p.para{
     width: 100vw;  
     opacity: 1;
 }
+
 .side-bar:hover .side-bar-button{
     width: 100vw;    
     /*margin-left: 45vw;*/
