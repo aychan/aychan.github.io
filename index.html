@@ -11,11 +11,15 @@
 
     <body>
         <script>
-            document.getElementsByClassName("button")[0].onclick = changeWidth;
+            /*document.getElementsByClassName("button")[0].onclick = changeWidth;
             function changeWidth(){
                 document.getElementsByClassName('side-bar side-bar-button-container')[0].style.width='.01vw';
                 //var step2 = step1.style.width='.01vw';
-            }
+                */
+                $( "a.button" ).click(function() {
+                $( this ).toggleClass( "side-bar:hover" );
+                });
+            
         </script>
         <div class="side-bar" id="pullback">
             <div class="side-bar-button-container">
