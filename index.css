@@ -36,7 +36,6 @@ p.para{
     width: 100vw;  
     opacity: 1;
 }
-
 .side-bar:hover .side-bar-button{
     width: 100vw;    
     /*margin-left: 45vw;*/
@@ -69,6 +68,15 @@ p.para{
     -o-transition: opacity .5s ease-in;
     -webkit-transition: opacity .5s ease-in;
     transition: opacity .5s ease-in;
+}
+.transition-helper{
+    -moz-transition: height .1s;
+    -webkit-transition: height .1s;
+    transition: .1s;
+    width: 20vw;
+    height: 100vh;
+    text-align: center;
+    
 }
 .clicker { 
     -moz-transition: all .1s ease-in;
