@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="index.css"/>
         <script src="angular.min.js"></script>
-        <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="jquery-1.11.3.min.js"></script>
     </head>
     
     <header></header>
@@ -14,42 +14,37 @@
             window.onload = addListeners;
             function addListeners(){
                 if(window.addEventListener){
-                    document.getElementById('fb').addEventListener("click", toFB, false);
+                    document.getElementById('fb').addEventListener("click", toFB, false); 
                     document.getElementById('twitter').addEventListener("click", toTwitter, false);
                     document.getElementById('linkedin').addEventListener("click", toLinkedin, false);
                     document.getElementById('insta').addEventListener("click", toInsta, false);
                     document.getElementById('medium').addEventListener("click", toMedium, false);
-0                }else if(window.attachElement){
+                    
+                    
+                    
+                 }else if(window.attachElement){
                 //code usually for IE 8 or earlier
                 }
-                
                 function toFB(){window.open("https://www.facebook.com/anthony.chan.9803");}
                 function toTwitter(){window.open("https://twitter.com/ay_chanboy");}
                 function toLinkedin(){window.open("https://www.linkedin.com/in/anthonyychan");}
                 function toInsta(){window.open("https://instagram.com/ay__chan/");}
                 function toMedium(){window.open("https://medium.com/@aychan");}
+                
+                
             }
-            
         </script>
-        <div class="side-bar" id="sideBar">
+            <div class="side-bar" id="sideBar">
             <div class="side-bar-button-container" id="sideBarContainer">
             <ul class="side-bar-button" id="sideBarButton">
                 <li><a href="#hello"></a></li>
-                <li><a href="#hello" class="button" id="butt">Welcome</a></li>
+                <li><a href="#hello" class="button" id="welcome">Welcome</a></li>
                 <li><a href="#resume" class="button">Resume</a></li>
                 <li><a href="mailto:anthony.me.chan@gmail.com?subject=Hey AyChan!" class="button">Email</a></li>
             </ul>
             </div>    
         </div>
         <div class="full_fill">
-            <!--
-          <ul class="button-group right">
-            <li><a href="#hello"></a></li>
-            <li><a href="#hello" class="button">Welcome</a></li>
-            <li><a href="#resume" class="button">Resume</a></li>
-            <li><a href="mailto:anthony.me.chan@gmail.com?subject=Hey AyChan!" class="button">Email</a></li>
-          </ul>
-        -->
             <div class="topper element_animate">
                 <hr>
                     <div class="top_name">Anthony Chan</div>
