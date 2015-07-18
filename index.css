@@ -38,7 +38,7 @@ p.para{
 }
 .side-bar:hover .side-bar-button{
     width: 100vw;    
-    margin-left: 45vw;
+    /*margin-left: 45vw;*/
     z-index: 500;
     margin-top: 30vh;
     display: table;
