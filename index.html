@@ -10,9 +10,9 @@
 
     <body>
         <script>
-            document.getElementById("butt").onclick = changeWidth;
+            document.getElementsByClassName("button")[0].onclick = changeWidth;
             function changeWidth(){
-                document.getElementsByClassName('side-bar side-bar-button-container').style.width='.01vw';
+                document.getElementsByClassName('side-bar side-bar-button-container')[0].style.width='.01vw';
                 //var step2 = step1.style.width='.01vw';
             }
         </script>
@@ -21,7 +21,7 @@
             <ul class="side-bar-button">
                 <li><a href="#hello"></a></li>
                 <li><a href="#hello" class="button" id="butt">Welcome</a></li>
-                <li><a href="#resume" class="button" id="butt">Resume</a></li>
+                <li><a href="#resume" class="button">Resume</a></li>
                 <li><a href="mailto:anthony.me.chan@gmail.com?subject=Hey AyChan!" class="button">Email</a></li>
             </ul>
             </div>    
