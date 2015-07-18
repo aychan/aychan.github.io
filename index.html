@@ -10,20 +10,30 @@
     <header></header>
 
     <body>
-        <script>
-            /*document.getElementsByClassName("button")[0].onclick = changeWidth;
-            function changeWidth(){
-                document.getElementsByClassName('side-bar side-bar-button-container')[0].style.width='.01vw';
-                //var step2 = step1.style.width='.01vw';
-                */
-                $( "#butt" ).click(function() {
-                $( "div.side-bar" ).toggleClass( "side-bar");
-                });
+        <script type="text/javascript">
+            window.onload = addListeners;
+            function addListeners(){
+                if(window.addEventListener){
+                    document.getElementById('fb').addEventListener("click", toFB, false);
+                    document.getElementById('twitter').addEventListener("click", toTwitter, false);
+                    document.getElementById('linkedin').addEventListener("click", toLinkedin, false);
+                    document.getElementById('insta').addEventListener("click", toInsta, false);
+                    document.getElementById('medium').addEventListener("click", toMedium, false);
+0                }else if(window.attachElement){
+                //code usually for IE 8 or earlier
+                }
+                
+                function toFB(){window.open("https://www.facebook.com/anthony.chan.9803");}
+                function toTwitter(){window.open("https://twitter.com/ay_chanboy");}
+                function toLinkedin(){window.open("https://www.linkedin.com/in/anthonyychan");}
+                function toInsta(){window.open("https://instagram.com/ay__chan/");}
+                function toMedium(){window.open("https://medium.com/@aychan");}
+            }
             
         </script>
-        <div class="side-bar" id="pullback">
-            <div class="side-bar-button-container">
-            <ul class="side-bar-button">
+        <div class="side-bar" id="sideBar">
+            <div class="side-bar-button-container" id="sideBarContainer">
+            <ul class="side-bar-button" id="sideBarButton">
                 <li><a href="#hello"></a></li>
                 <li><a href="#hello" class="button" id="butt">Welcome</a></li>
                 <li><a href="#resume" class="button">Resume</a></li>
@@ -48,11 +58,11 @@
             <div class="topper_bot element_animate_2 ">
                 <span id="header-content">
                     <ul class="inline-list ">
-                    <li><a href="https://www.facebook.com/anthony.chan.9803" target="_blank"><img class="smalz clicker" src="fb.gif"></a></li>
-                    <li><a href="https://twitter.com/ay_chanboy" target="_blank"><img class="smalz clicker" src="tweet.png"></a></li>
-                    <li><a href="https://www.linkedin.com/in/anthonyychan" target="_blank"><img class="smalz clicker" src="in.png"></a></li>
-                    <li><a href="https://instagram.com/ay__chan/" target="_blank"><img class="smal clickery" src="instagram.png"></a></li>
-                    <li><a href="https://medium.com/@aychan" target="_blank"><img class="smalz clicker" src="medium.png"></a></li>
+                    <li><a id="fb"><img class="smalz clicker" src="fb.gif"></a></li>
+                    <li><a id="twitter"><img class="smalz clicker" src="tweet.png"></a></li>
+                    <li><a id="linkedin"><img class="smalz clicker" src="in.png"></a></li>
+                    <li><a id="insta"><img class="smal clickery" src="instagram.png"></a></li>
+                    <li><a id="medium"><img class="smalz clicker" src="medium.png"></a></li>
                     </ul>
                 </span>
             </div>
