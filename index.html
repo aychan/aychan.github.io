@@ -9,13 +9,18 @@
     <header></header>
 
     <body>
-        <div id="pullback" class="side-bar">
+        <script>
+            function changeWidth(id){
+                id.style.width='.01vw';
+            }
+        </script>
+        <div class="side-bar">
             <div class="side-bar-button-container">
             <ul class="side-bar-button">
                 <li><a href="#hello"></a></li>
-                <li><a href="#hello" class="button" onkeyup="document.getElementById('pullback').style.width = '.01vw'">Welcome</a></li>
-                <li><a href="#resume" class="button">Resume</a></li>
-                <li><a href="mailto:anthony.me.chan@gmail.com?subject=Hey AyChan!" class="button">Email</a></li>
+                <li><a href="#hello" class="button" onclick="changeWidth(this)">Welcome</a></li>
+                <li><a href="#resume" class="button" onclick="changeWidth(this)">Resume</a></li>
+                <li><a href="mailto:anthony.me.chan@gmail.com?subject=Hey AyChan!" class="button" onclick="changeWidth(this)">Email</a></li>
             </ul>
             </div>    
         </div>
