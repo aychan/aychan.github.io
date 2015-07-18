@@ -70,9 +70,9 @@ p.para{
     transition: opacity .5s ease-in;
 }
 .transition-helper{
-    -moz-transition: height .1s;
+    /*-moz-transition: height .1s;
     -webkit-transition: height .1s;
-    transition: .1s;
+    transition: .1s;*/
     width: 20vw;
     height: 100vh;
     text-align: center;
