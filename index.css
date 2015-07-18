@@ -73,7 +73,7 @@ p.para{
     /*-moz-transition: height .1s;
     -webkit-transition: height .1s;
     transition: .1s;*/
-    width: 20vw;
+    width: 100vw;
     height: 100vh;
     text-align: center;
     background-color: #fff;
