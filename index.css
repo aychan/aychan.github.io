@@ -85,6 +85,7 @@ p.para{
     -moz-transition: width 0s;
     transition: wiedth 0s;
 }
+
 .transition-helper{
     /*-moz-transition: height .1s;
     -webkit-transition: height .1s;
@@ -94,6 +95,7 @@ p.para{
     text-align: center;
     background-color: #fff;
     z-index: 600;
+    
 }
 .clicker { 
     -moz-transition: all .1s ease-in;
@@ -140,6 +142,36 @@ p.para{
   100% {
     opacity: 2;
   }
+}
+.changing{
+    width: 0.01vw;
+    height: 100vh;
+    background-color: red;
+    position: absolute; 
+    z-index: 100;
+
+    -webkit-animation-name: pagechange; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    animation-name: pagechange;
+    animation-duration: 1s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes pagechange {
+    0%   {background-color:red; width:.01vw; height:100vh; left: 100vw;}
+    25%  {background-color:red; width:100vw; top:0px;}
+    50%  {background-color:red; width:100px; height:100px;}
+    75%  {background-color:green; left:0px; width:100vw;}
+    100% {background-color:green; left:0px; top:0px; height: 0.01vh; width: 100vw;}
+}
+
+/* Standard syntax */
+@keyframes pagechange {
+    0%   {background-color:red; width:.01vw; height:100vh; left: 100vw;}
+    25%  {background-color:red; width:100vw; top:0px;}
+    50%  {background-color:red; width:100vw; height:100vh; left: 0.01vw;}
+    75%  {background-color:green; left:0px; width:100vw;}
+    100% {background-color:green; left:0px; top:0px; height: 0.01vh; width: 100vw;}
 }
 .height-bio{
     display: table;
