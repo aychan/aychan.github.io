@@ -2,10 +2,15 @@
 #header-content{
     position: absolute;
     vertical-align: bottom;
+    top: 77%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 50%);
     bottom: 0;
-    padding-left: 33.333vw;
     text-decoration: none;
     outline-style: none;
+    text-align: center;
+    align-content: center;
 }
 .top_name{
     font-size: 6vw;     
@@ -147,9 +152,11 @@ p.para{
  height: 75vh;
 }
 img.smalz{
+    display: table;
     text-align: center;
     height: 8vh;
     width: auto;
+    margin-left: auto;
     filter: invert(100%); 
     -webkit-filter:invert(100%);
 }
@@ -160,6 +167,10 @@ img.smal{
 img.pic{
     width: 45vw;
     height:auto;
+}
+img.personalPhotos{
+    max-width: 30vw;
+    height: auto;
 }
 .banner{
     width: 99vw;
@@ -172,7 +183,7 @@ img.pic{
     font-size: 7em;
     background-image: url(nature.jpg);
     /*background-image: url(mountain.jpg);*/
-    background-size:cover;
+    background-size: cover;
     background-position: bottom;
          /*#39ADD9;*/
     text-align: center;
@@ -210,13 +221,12 @@ img.pic{
     
 }
 .topper_bot{
-    display: inline-block;
-    
-    height: 97vh;
+    display: table;
+    height: 84vh;
     font-size: 3em;
     color: #FFFEEB;
-    text-align: center;
-    vertical-align:bottom;
+    vertical-align: bottom;
+    align-content: center;
     
 }
 .centers{
@@ -236,7 +246,6 @@ img.full_fill_top{
 .full_fill{
     width: 100%;
     height: 100vh;
-    /*background-image:url('mountain.jpg');*/
     background-image:url('nature.jpg');
     background-size:cover;
     background-repeat: no-repeat;
@@ -363,10 +372,10 @@ select {
   width: 100%; }
 
 .row {
-  width: 100%;
-  width: 100vw;
+  width: 99%;
+  width: 99vw;
   margin-left: 0;
-  margin-right: 0;
+  margin-right: 0vw;
   margin-top: 0;
   margin-bottom: 0;
   background-size: cover;
@@ -401,7 +410,8 @@ select {
       max-width: none; }
       .row .row.collapse:before, .row .row.collapse:after {
         content: " ";
-        display: table; }
+        display: table;
+        }
       .row .row.collapse:after {
         clear: both; }
 
@@ -1162,8 +1172,8 @@ select {
     width: 25%; }
 
   .large-4 {
-    width: 32.33333%;
-    width: 32.3333vw;
+    width: 31.33333%;
+    width: 31.3333vw;
   }
 
   .large-5 {
@@ -3330,11 +3340,14 @@ label.error {
     width: auto; } }
 
 .inline-list {
-  padding: 0;
-  list-style: none;
-  overflow: hidden; 
-  align-content: center;
-align-items: center;  
+    display: flex;
+    align-self: center;
+    /*padding: 0;*/
+    list-style: none;
+    overflow: hidden; 
+    align-content: center;
+    align-items: center;  
+    text-align: center;
 }
 
   .inline-list > li {
