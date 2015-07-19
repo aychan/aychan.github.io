@@ -17,8 +17,8 @@
             <ul class="side-bar-button" id="sideBarButton">
                 <li><a href="#hello"></a></li>
                 <li><a href="#peak" class="button" id="peakChange" onclick="changePage()">Peak</a></li>
-                <li><a href="#hello" class="button" id="welcome">Welcome</a></li>
-                <li><a href="#resume" class="button">Resume</a></li>
+                <li><a href="#hello" class="button" id="welcomeNav" onclick="changePage()">Welcome</a></li>
+                <li><a href="#resume" class="button" id="resumeNav" onClick="changePage()">Resume</a></li>
                 <li><a href="mailto:anthony.me.chan@gmail.com?subject=Hey AyChan!" class="button">Email</a></li>
             </ul>
               
@@ -169,7 +169,8 @@
                     document.getElementById('medium').addEventListener("click", toMedium, false);
                     
                     document.getElementById('peakChange').addEventListener("click", changePage, false);
-                    
+                    document.getElementById('welcomeNav').addEventListener("click", changePage2, false);
+                    document.getElementById('resumeNav').addEventListener("click", changePage3, false);
                  }else if(window.attachElement){
                 //code usually for IE 8 or earlier
                 }
@@ -179,13 +180,21 @@
                 function toInsta(){window.open("https://instagram.com/ay__chan/");}
                 function toMedium(){window.open("https://medium.com/@aychan");}
             }
-            //var myVar = setInterval(function() {changePage()},3000);
-                function changePage(){
+                function changePage3(){ 
                     document.getElementById('sideBar').className = "changing";
-                    setInterval(function(){
-                    document.getElementById('sideBar').className = "side-bar"}, 7000);
-                    
+                    setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
+                }
+                function changePage2(){ 
+                    document.getElementById('sideBar').className = "changing";
+                    setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
+                }
+                function changePage(){ 
+                    document.getElementById('sideBar').className = "changing";
+                    setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
                     
                 }
+                
+                
+                
         </script>
 </html>
