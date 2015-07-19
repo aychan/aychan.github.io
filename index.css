@@ -152,6 +152,8 @@ p.para{
 
     -webkit-animation-name: pagechange; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    -moz-animation-name: pagechange;
+    -moz-animation-duration: 1s;
     animation-name: pagechange;
     animation-duration: 1s;
 }
@@ -164,14 +166,17 @@ p.para{
     75%  {background-color:green; left:0px; width:100vw;}
     100% {background-color:green; left:0px; top:0px; height: 0.01vh; width: 100vw;}
 }
-
 /* Standard syntax */
 @keyframes pagechange {
-    0%   {background-color:red; width:.01vw; height:100vh; left: 100vw;}
-    25%  {background-color:red; width:100vw; top:0px;}
-    50%  {background-color:red; width:100vw; height:100vh; left: 0.01vw;}
-    75%  {background-color:green; left:0px; width:100vw;}
-    100% {background-color:green; left:0px; top:0px; height: 0.01vh; width: 100vw;}
+    0%   {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; height:100vh;}
+    25%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; top:0px;}
+    50%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; height:100vh; left: 0.01vw;}
+    75%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); left:0px; width:100vw;}
+    100% {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); left:0px; top:0px; height: 0.01vh; width: 100vw;}
+    
+}
+.nullify{
+    
 }
 .height-bio{
     display: table;
