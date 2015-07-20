@@ -51,7 +51,7 @@ p.para{
     width: 100vw;    
     /*margin-left: 45vw;*/
     z-index: 500;
-    margin-top: 30vh;
+    margin-top: 16vh;
     display: table;
     opacity: 1;
     text-align: center;
@@ -146,23 +146,22 @@ p.para{
 .changing{
     width: 0.01vw;
     height: 100vh;
-    background-color: red;
-    position: absolute; 
-    z-index: 100;
+    position:absolute; 
+    z-index: 900;
 
     -webkit-animation-name: pagechange; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 1s; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1.5s; /* Chrome, Safari, Opera */
     -moz-animation-name: pagechange;
-    -moz-animation-duration: 1s;
+    -moz-animation-duration: 1.5s;
     animation-name: pagechange;
-    animation-duration: 1s;
+    animation-duration: 1.5s;
 }
 
 /* Chrome, Safari, Opera */
 @-webkit-keyframes pagechange {
-    0%   {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; height:100vh;}
+    0%   {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; height:1000vh;}
     25%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; top:0px;}
-    50%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; height:100vh; left: 0.01vw;}
+    50%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; height:1000vh; left: 0.01vw;}
     75%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); left:0px; width:100vw;}
     100% {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); left:0px; top:0px; height: 0.01vh; width: 100vw;}
 }
@@ -207,8 +206,23 @@ img.pic{
     height:auto;
 }
 img.personalPhotos{
-    max-width: 30vw;
+    max-width: 25vw;
     height: auto;
+}
+.bannerTop{
+    width: 99vw;
+    width: 99%;
+    margin-left: 1vw;
+    margin-left: 1%;
+    height: auto;
+    max-height: 4em;
+    color: #FFfFFF;
+    font-size: 7em;
+    background-image: url(mountain3.jpg);
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    vertical-align: text-top;
 }
 .banner{
     width: 99vw;

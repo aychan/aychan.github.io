@@ -17,8 +17,8 @@
             <ul class="side-bar-button" id="sideBarButton">
                 <li><a href="#"></a></li>
                 <li><a href="#peak" class="button" id="peakChange" onclick="changePage()">Peak</a></li>
-                <li><a href="#hello" class="button" id="welcomeN" onclick="changePage()">Welcome</a></li>
-                <li><a href="#resume" class="button" id="resumeN" onClick="changePage()">Resume</a></li>
+                <li><a href="#hello" class="button" id="welcomeN" onclick="changePage2()">Welcome</a></li>
+                <li><a href="#resume" class="button" id="resumeN" onClick="changePage3()">Resume</a></li>
                 <li><a href="mailto:anthony.me.chan@gmail.com?subject=Hey AyChan!" class="button">Email</a></li>
             </ul>
               
@@ -38,15 +38,20 @@
                     <li><a id="twitter"><img class="smalz clicker" src="tweet.png"></a></li>
                     <li><a id="linkedin"><img class="smalz clicker" src="in.png"></a></li>
                     <!--<li><a id="insta"><img class="smal clickery" src="instagram.png"></a></li>-->
-                    <li><a id="medium"><img class="smalz clicker" src="medium.png"></a></li>
+                    <li ><a id="medium"><img class="smalz clicker" src="medium.png"></a></li>
                     </ul>
                 </span>
             </div>
       </div>
-     
-  <div class = "height-bio" id="hello">   
+   <!--<div id="helloTop">  
+       <div class="row bannerTop" >
+        <hr>
+        <div class="top_name">Hello There!</div>
+        <hr>
+    </div>     -->
+  <div class = "height-bio" >   
       <div class="row">
-          <div  class="large-8 columns" style="color: white;">
+          <div  class="large-8 columns" style="color: white;" id="hello">
            
           <h4  style="color: white;">Hello there!</h4>
           <div class="row">
@@ -63,7 +68,7 @@
         </div>
       </div>
 
-      <div class="row">
+      <div class="row" >
         <div class="large-8 columns" style="color: white;">
           <h4 style="color: white;">This is content section two.</h4>
      
@@ -77,12 +82,16 @@
         <div class="large-4 columns"><img class="personalPhotos" src="HEADSHOT.jpg"></div>
         <div class="large-4 columns"><img class="personalPhotos" src="fam.jpg"></div>
         <div class="large-4 columns"><img class="personalPhotos" src="propic.jpg"></div> 
+              
           </ul>
+          <div id="resume"></div>
     </div>
       
 </div>
-    
-    <div class="row banner" id="resume">
+            
+</div>
+        
+    <div class="row banner" >
         <hr>
         <div class="top_name">Resumé</div>
         <hr>
@@ -91,15 +100,18 @@
         
     <div class="row" style="color:white">
         <div class="large-12 columns" style="background-color:#28626E">
+        </br>    
             <h2 style="color:white">So what have I done?</h2>
             <div class="large-6 columns">
             <h5>Recently,</h5>
                 <div class="large-12 columns height-list">
                     <div class="large-6 columns">
-                    <p>item 1</p>
+                    <p>Intern for the Berthiaume Center for Entrepreneurship </p>
+                        <p>[details]</p>
                     </div>
                     <div class="large-6 columns">
-                    <p>item 2</p>
+                    <p>Sponsorship Lead, HackUMass</p>
+                        <p>[details]</p>
                     </div>
                 </div>
             </div>
@@ -107,10 +119,12 @@
             <h5>Some time before,</h5>
                 <div class="large-12 columns height-list">
                     <div class="large-6 columns">
-                    <p>item 3</p>
+                    <p>AT/IV Director, TEDxAmherst</p>
+                        <p>[details]</p>
                     </div>
                     <div class="large-6 columns">
-                    <p>item 4</p>
+                    <p>Communications Head, UMass Entrepreneurship Club</p>
+                        <p>[details]</p>
                     </div>
                 </div>
             </div>
@@ -123,10 +137,10 @@
             <h5>Hobbies include,</h5>
                 <div class="large-12 columns height-list">
                     <div class="large-6 columns">
-                    <p>item 5</p>
+                    <p>Archery</p>
                     </div>
                     <div class="large-6 columns">
-                    <p>item 6</p>
+                    <p>Jazz Piano</p>
                     </div>
                 </div>
             </div>
@@ -170,9 +184,9 @@
                     
                     document.getElementById('peakChange').addEventListener("click", changePage, false);
                     
-                    document.getElementById('welcomeN').addEventListener("click", changePage, false);
+                    document.getElementById('welcomeN').addEventListener("click", changePage2, false);
                     
-                    document.getElementById('resumeN').addEventListener("click", changePage, false);
+                    document.getElementById('resumeN').addEventListener("click", changePage3, false);
                     
                  }else if(window.attachElement){
                 //code usually for IE 8 or earlier
@@ -184,10 +198,19 @@
                 function toMedium(){window.open("https://medium.com/@aychan");}
             }
                 
-                function changePage(){ 
+                function changePage(){ // to top
                     document.getElementById('sideBar').className = "changing";
                     setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
                     
+                }
+                function changePage2(){ // to welcome section
+                    document.getElementById('sideBar').className = "changing";
+                    //document.getElementById('sideBar').style.animation_direction= 'alternate';
+                    setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
+                }
+                function changePage3(){ //to resume section
+                    document.getElementById('sideBar').className = "changing";
+                    setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
                 }
                 
                 
