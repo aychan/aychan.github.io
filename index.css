@@ -149,8 +149,7 @@ p.para{
     position:absolute; 
     z-index: 900;
 
-    animation: pagechange;
-    animation-duration: 1.5s;
+    
     -webkit-animation-name: pagechange; /* Chrome, Safari, Opera */
     -webkit-animation-duration: 1.5s; /* Chrome, Safari, Opera */
     -moz-animation-name: pagechange;
