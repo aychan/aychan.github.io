@@ -14,6 +14,7 @@
         });
         $("#peakChange").click(function(){
             $("#sideBar").fadeOut(1000);
+            $("#sideBar").fadeOut();
             
             function changePage(){ // to top
                     document.getElementById('sideBar').className = "changing";
@@ -22,7 +23,7 @@
         });
         $("#welcomeN").click(function(){
             $("#sideBar").fadeOut(1000);
-            function changePage(){ // to top
+            //function changePage(){ // to top
                     document.getElementById('sideBar').className = "changing";
                     setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
             }
@@ -30,7 +31,7 @@
         });
         $("#resumeN").click(function(){
             $("#sideBar").fadeOut(1000);
-            function changePage(){ // to top
+           // function changePage(){ // to top
                     document.getElementById('sideBar').className = "changing";
                     setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
             }
