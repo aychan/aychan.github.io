@@ -21,11 +21,15 @@
         });
         $("#welcomeN").click(function(event){
             $("#sideBar").fadeOut(1000);
-            changePage();
+            function changePage(){ // to top
+                    document.getElementById('sideBar').className = "changing";
+                    setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
         });
         $("#resumeN").click(function(event){
             $("#sideBar").fadeOut(1000);
-            changePage();
+            function changePage(){ // to top
+                    document.getElementById('sideBar').className = "changing";
+                    setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
         });
             });
         </script>
