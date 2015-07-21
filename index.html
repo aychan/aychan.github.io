@@ -12,14 +12,7 @@
                     scrollTop: $("#hello").offset().top
                 }, 750);
         });
-        $("#peakChange").click(function(event, changePage){
-            $("#sideBar").fadeOut(1000);
-            
-            function changePage(){ // to top
-                    document.getElementById('sideBar').className = "changing";
-                    setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
-            }
-        });
+       
         $("#welcomeN").click(function(event){
             $("#sideBar").fadeOut(1000);
             function changePage(){ // to top
