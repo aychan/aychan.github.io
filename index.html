@@ -43,6 +43,48 @@
     <header></header>
 
     <body>
+        <style>
+        .changing{
+    width: 0.01vw;
+    height: 100vh;
+    position:absolute; 
+    z-index: 900;
+
+    
+    -webkit-animation-name: pagechange; /* Chrome, Safari, Opera */
+    -webkit-animation-duration: 1.5s; /* Chrome, Safari, Opera */
+    -moz-animation-name: pagechange;
+    -moz-animation-duration: 1.5s;
+    animation-name: pagechange;
+    animation-duration: 1.5s;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes pagechange {
+    0%   {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; height:1000vh;}
+    25%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; top:0px;}
+    50%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; height:1000vh; left: 0.01vw;}
+    75%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); left:0px; width:100vw;}
+    100% {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); left:0px; top:0px; height: 0.01vh; width: 100vw;}
+}
+/* Standard syntax */
+@keyframes pagechange {
+    0%   {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; width:100%; height:100vh; height: 100%;}
+    /*25%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; top:0px;}
+    50%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; height:100vh; left: 0.01vw;} 
+    75%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); left:0px; width:100vw;}*/
+    100% {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); height: 0.01vh; height: 0.01%; width: 100vw; width: 100%;}
+    
+}
+@-moz-keyframes pagechange {
+    0%   {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; width:100%; height:100vh; height: 100%;}
+    /*25%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; top:0px;}
+    50%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; height:100vh; left: 0.01vw;} 
+    75%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); left:0px; width:100vw;}*/
+    100% {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); height: 0.01vh; height: 0.01%; width: 100vw; width: 100%;}
+    
+}
+        </style>
         
         <div id="wholeDamnThing">
             <div class="side-bar" id="sideBar">
