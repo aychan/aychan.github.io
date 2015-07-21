@@ -18,18 +18,21 @@
             function changePage(){ // to top
                     document.getElementById('sideBar').className = "changing";
                     setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
+            }
         });
         $("#welcomeN").click(function(event){
             $("#sideBar").fadeOut(1000);
             function changePage(){ // to top
                     document.getElementById('sideBar').className = "changing";
                     setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
+            }
         });
         $("#resumeN").click(function(event){
             $("#sideBar").fadeOut(1000);
             function changePage(){ // to top
                     document.getElementById('sideBar').className = "changing";
                     setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
+            }
         });
             });
         </script>
@@ -45,8 +48,8 @@
             <ul class="side-bar-button" id="sideBarButton">
                 <li><a href="#"></a></li>
                 <li><a href="#peak" class="button" id="peakChange" onclick="changePage()">Peak</a></li>
-                <li><a href="#hello" class="button" id="welcomeN" >Welcome</a></li>
-                <li><a href="#resume" class="button" id="resumeN" >Resume</a></li>
+                <li><a href="#hello" class="button" id="welcomeN" onclick="changePage()">Welcome</a></li>
+                <li><a href="#resume" class="button" id="resumeN" onclick="changePage()">Resume</a></li>
                 <li><a href="mailto:anthony.me.chan@gmail.com?subject=Hey AyChan!" class="button">Email</a></li>
             </ul>
               
