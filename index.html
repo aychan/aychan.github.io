@@ -10,7 +10,7 @@
         $("#kk").click( function(event) {
                 $('html, body').animate({
                     scrollTop: $("#hello").offset().top
-                }, 750);
+                }, 1000);
         });
         $("#peakChange").click(function(){
             $("#sideBar").fadeOut(1000);
@@ -21,11 +21,12 @@
             }
         });
         $("#welcomeN").click(function(){
-            $("#sideBar").fadeOut(1000);
+            
             function changePage(){ // to top
                     document.getElementById('sideBar').className = "changing";
                     setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
             }
+            $("#sideBar").fadeOut(1000);
         });
         $("#resumeN").click(function(){
             $("#sideBar").fadeOut(1000);
