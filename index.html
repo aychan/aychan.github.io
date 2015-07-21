@@ -21,12 +21,12 @@
             }
         });
         $("#welcomeN").click(function(){
-            
+            $("#sideBar").fadeOut(1000);
             function changePage(){ // to top
                     document.getElementById('sideBar').className = "changing";
                     setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
             }
-            $("#sideBar").fadeOut(1000);
+            
         });
         $("#resumeN").click(function(){
             $("#sideBar").fadeOut(1000);
