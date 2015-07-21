@@ -3,8 +3,21 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="index.css"/>
-        
-        <script src="jquery-1.11.3.min.js"></script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script>
+        $(document).ready(function(){
+        $("#kk").click( function(event) {
+
+    
+                $('html, body').animate({
+                    scrollTop: $("#hello").offset().top
+                }, 1000);
+            
+
+        });
+            });
+        </script>
     </head>
     
     <header></header>
@@ -28,7 +41,7 @@
         <div class="full_fill" id="peak">
             <div class="topper element_animate">
                 <hr>
-                    <div class="top_name">Anthony Chan</div>
+                    <div class="top_name">Anthony Chan <img href="#hello" id="kk" class="smalz clicker" src="instagram.png" onclick="scroll"></div>
                 <hr>
             </div>
             <div class="topper_bot element_animate_2 ">
@@ -168,7 +181,7 @@
           </div>
         </div>
       </footer>
-        </div>
+        
         
         
 
@@ -184,9 +197,12 @@
                     document.getElementById('medium').addEventListener("click", toMedium, false);
                     document.getElementById('gitHub').addEventListener("click", toGit, false);
                     
+                    document.getElementById('kk').addEventListener("click",scroll,false);
+                    
+                    
                     document.getElementById('peakChange').addEventListener("click", changePage, false);
                     
-                    document.getElementById('welcomeN').addEventListener("click", changePage2, false);
+                   // document.getElementById('welcomeN').addEventListener("click", scroll(2000), false);
                     
                     document.getElementById('resumeN').addEventListener("click", changePage3, false);
                     
@@ -215,7 +231,6 @@
                     document.getElementById('sideBar').className = "changing";
                     setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
                 }
-                
                 
                 
         </script>
