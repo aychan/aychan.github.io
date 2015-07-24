@@ -189,6 +189,7 @@ p.para{
 .height-bio{
     display: table;
     width: 100vw;
+    height: 100vh;
     /*background-image: url(mountain3.jpg);*/
     background-position: bottom;
     background-size: cover;
@@ -309,6 +310,14 @@ img.full_fill_top{
     height: 100vh;
     background-image:url('nature.jpg');
     background-size:cover;
+    background-repeat: no-repeat;
+}
+.full_fill_blank{
+    width: 100%;
+    width: 100vw;
+    height:100%;
+    height:100vh;
+    background-size: cover;
     background-repeat: no-repeat;
 }
 meta.foundation-version {
