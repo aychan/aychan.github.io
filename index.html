@@ -3,8 +3,8 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="index.css"/>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>
         $(document).ready(function(){
         $("#kk").click( function(event) {
@@ -43,51 +43,10 @@
     <header></header>
 
     <body>
-        <style>
-        .changing{
-    width: 0.01vw;
-    height: 100vh;
-    position:absolute; 
-    z-index: 900;
-
-    
-    -webkit-animation-name: pagechange; /* Chrome, Safari, Opera */
-    -webkit-animation-duration: 1.5s; /* Chrome, Safari, Opera */
-    -moz-animation-name: pagechange;
-    -moz-animation-duration: 1.5s;
-    animation-name: pagechange;
-    animation-duration: 1.5s;
-}
-
-/* Chrome, Safari, Opera */
-@-webkit-keyframes pagechange {
-    0%   {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; height:1000vh;}
-    25%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; top:0px;}
-    50%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; height:1000vh; left: 0.01vw;}
-    75%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); left:0px; width:100vw;}
-    100% {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); left:0px; top:0px; height: 0.01vh; width: 100vw;}
-}
-/* Standard syntax */
-@keyframes pagechange {
-    0%   {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; width:100%; height:100vh; height: 100%;}
-    /*25%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; top:0px;}
-    50%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; height:100vh; left: 0.01vw;} 
-    75%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); left:0px; width:100vw;}*/
-    100% {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); height: 0.01vh; height: 0.01%; width: 100vw; width: 100%;}
-    
-}
-@-moz-keyframes pagechange {
-    0%   {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; width:100%; height:100vh; height: 100%;}
-    /*25%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; top:0px;}
-    50%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); width:100vw; height:100vh; left: 0.01vw;} 
-    75%  {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); left:0px; width:100vw;}*/
-    100% {background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain.jpg); height: 0.01vh; height: 0.01%; width: 100vw; width: 100%;}
-    
-}
-        </style>
         
-        <div id="wholeDamnThing">
-            <div class="side-bar" id="sideBar">
+        
+    <div id="wholeDamnThing">
+        <div class="side-bar" id="sideBar">
             <div class="side-bar-button-container" id="sideBarContainer">
             <ul class="side-bar-button" id="sideBarButton">
                 <li><a href="#"></a></li>
@@ -103,7 +62,7 @@
         <div class="full_fill" id="peak">
             <div class="topper element_animate">
                 <hr>
-                    <div class="top_name">Anthony Chan <img href="#hello" id="kk" class="smalz clicker" src="instagram.png" onclick="scroll"></div>
+                    <div class="top_name">Anthony Chan</div>
                 <hr>
             </div>
             <div class="topper_bot element_animate_2 ">
@@ -113,18 +72,11 @@
                     <li><a id="twitter"><img class="smalz clicker" src="tweet.png"></a></li>
                     <li><a id="linkedin"><img class="smalz clicker" src="in.png"></a></li>
                     <li><a id="gitHub"><img class="smalz clicker" src="github.png"></a></li>
-                    <!--<li><a id="insta"><img class="smal clickery" src="instagram.png"></a></li>-->
                     <li ><a id="medium"><img class="smalz clicker" src="medium.png"></a></li>
                     </ul>
                 </span>
             </div>
       </div>
-   <!--<div id="helloTop">  
-       <div class="row bannerTop" >
-        <hr>
-        <div class="top_name">Hello There!</div>
-        <hr>
-    </div>     -->
   <div class = "height-bio" >   
       <div class="row">
           <div  class="large-8 columns" style="color: white;" id="hello">
@@ -160,7 +112,6 @@
         <div class="large-4 columns"><img class="personalPhotos" src="propic.jpg"></div> 
               
           </ul>
-          <div id="resume"></div>
     </div>
       
 </div>
@@ -169,7 +120,7 @@
         
     <div class="row banner" >
         <hr>
-        <div class="top_name">Resumé</div>
+        <div class="top_name" id="resume">Resumé</div>
         <hr>
     </div>     
         
