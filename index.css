@@ -325,7 +325,7 @@ img.full_fill_top{
 }
 .full_fill{
     
-     background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.5) ), url(nature.jpg);
+     background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ), url(nature.jpg);
     background-size:cover;
     background-repeat: no-repeat;
 }
