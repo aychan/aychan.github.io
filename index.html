@@ -5,39 +5,6 @@
         <link rel="stylesheet" type="text/css" href="index.css"/>
         <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.1/jquery.min.js"></script>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script>
-        $(document).ready(function(){
-        $("#kk").click( function(event) {
-                $('html, body').animate({
-                    scrollTop: $("#hello").offset().top
-                }, 1000);
-        });
-        $("#peakChange").click(function(){
-            $("#sideBar").fadeOut(1000);
-            $("#sideBar").fadeIn();
-            
-            function changePage(){ // to top
-                    document.getElementById('sideBar').className = "changing";
-                    setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
-            }
-        });
-        $("#welcomeN").click(function(){
-            $("#sideBar").fadeOut(1000);
-            //function changePage(){ // to top
-                    document.getElementById('sideBar').className = "changing";
-                    setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
-            }
-            
-        });
-        $("#resumeN").click(function(){
-            $("#sideBar").fadeOut(1000);
-           // function changePage(){ // to top
-                    document.getElementById('sideBar').className = "changing";
-                    setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
-            }
-        });
-            });
-        </script>
     </head>
     <header></header>
     <body>
@@ -46,20 +13,20 @@
             <ul class="side-bar-button" id="sideBarButton">
                 <li><a href="#"></a></li>
                 <li><a href="#peak" class="button" id="peakChange" onclick="changePage()">Peak</a></li>
-                <li><a href="#hello" class="button" id="welcomeN" onclick="changePage()">Welcome</a></li>
-                <li><a href="#resume" class="button" id="resumeN" onclick="changePage()">Resume</a></li>
+                <li><a href="#hello" class="button" id="welcomeN" onclick="changePage2x()">Welcome</a></li>
+                <li><a href="#resumePage" class="button" id="resumeN" onclick="changePage3()">Resume</a></li>
                 <li><a href="mailto:anthony.me.chan@gmail.com?subject=Hey AyChan!" class="button">Email</a></li>
             </ul>  
             </div>          
         </div>
         
-        <div class="full_fill" id="peak">
-            <div class="topper element_animate">
+        <div class="full_fill allCover" id="peak">
+            <div class="topper element_animate top_name" id="peak2"> 
                 <hr>
-                    <div class="top_name">Anthony Chan</div>
-                <hr>
+                Anthony Chan
+               <hr>
             </div>
-            <div class="topper_bot element_animate_2 ">
+            <div class="topper_bot element_animate_2 " id="peak3">
                 <span id="header-content">
                     <ul class="inline-list">
                     <li><a id="fb"><img class="smalz clicker" src="fb.gif"></a></li>
@@ -72,7 +39,7 @@
             </div>
       </div>
         
-  <div class = "height-bio" >   
+  <div class = "height-bio allCover" >   
       <div class="row">
           <div  class="large-8 columns" style="color: white;" id="hello">
            
@@ -91,7 +58,7 @@
         </div>
       </div>
 
-      <div class="row" >
+      <div class="row" id="welcomePage">
         <div class="large-8 columns" style="color: white;">
           <h4 style="color: white;">This is content section two.</h4>
      
@@ -109,19 +76,11 @@
     </div>
 </div>      
         
-    <!--<div class="row banner" >
-        <hr>
-        <div class="top_name" id="resume">Resumé</div>
-        <hr>
-    </div> -->
         
         
-    <div class="row full_fill_blank" style="color:white">
-        <div class="large-12 columns" style="background-color:#28626E">
-        </br>    
-            <h2 style="color:white">So what have I done?</h2>
+    <div class="row allCover" style="color:white; background-color:#28626E;" id="resumePage">
+        <!--<div class="large-12 columns" id="resumePage2" >
             <div class="large-6 columns">
-            <h5>Recently,</h5>
                 <div class="large-12 columns height-list">
                     <div class="large-6 columns">
                     <p>Intern for the Berthiaume Center for Entrepreneurship </p>
@@ -134,7 +93,7 @@
                 </div>
             </div>
             <div class="large-6 columns">
-            <h5>Some time before,</h5>
+            
                 <div class="large-12 columns height-list">
                     <div class="large-6 columns">
                     <p>AT/IV Director, TEDxAmherst</p>
@@ -146,7 +105,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div>-->
     </div>
    <!--<div class="row" style="color:white">
         <div class="large-12 columns" style="background-color:#28626E">
@@ -197,14 +156,16 @@
                     document.getElementById('medium').addEventListener("click", toMedium, false);
                     document.getElementById('gitHub').addEventListener("click", toGit, false);
                     
-                    document.getElementById('kk').addEventListener("click",scroll,false);
+                   // document.getElementById('kk').addEventListener("click",scroll,false);
                     
                     
                     document.getElementById('peakChange').addEventListener("click", changePage, false);
                     
-                   // document.getElementById('welcomeN').addEventListener("click", scroll(2000), false);
+                   // document.getElementById('welcomeN').addEventListener("click", changePage2, false);
                     
                     document.getElementById('resumeN').addEventListener("click", changePage3, false);
+                    
+                    
                     
                  }else if(window.attachElement){
                 //code usually for IE 8 or earlier
@@ -218,18 +179,36 @@
             }
                 
                 function changePage(){ // to top
+                    //$("#sidebar").removeClass("side-bar");
+                   // $("#sidebar").addClass("changing");
                     document.getElementById('sideBar').className = "changing";
                     setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
                     
                 }
                 function changePage2(){ // to welcome section
-                    document.getElementById('sideBar').className = "changing";
-                    //document.getElementById('sideBar').style.animation_direction= 'alternate';
-                    setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
+                    $("#sidebar").css('changing');
+                    //document.getElementById('sideBar').className = "changing";
+                    document.getElementById('peak').className = "toggleWelcome";
+                    document.getElementById('peak2').className = "toggleWelcome";
+                    document.getElementById('peak3').className = "toggleWelcome";
+                    document.getElementById('resumePage').className = "toggleWelcome";
+                    document.getElementById('resumePage2').className = "toggleWelcome";
+                    setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},3000);
+                    $("peak2").hide();
+                    alert("hello");
                 }
+                
                 function changePage3(){ //to resume section
                     document.getElementById('sideBar').className = "changing";
+                    document.getElementById('peak').className = "toggleWelcome";
+                    document.getElementById('welcomePage').className = "toggleWelcome";
                     setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
+                }
+                function test(){
+                    $("#sideBar").addClass("changing").removeClass("side-bar");
+                    //$("#sideBar").delay(3000).removeClass("changing").delay(3000).addClass("side-bar");
+                    setTimeout(function(){$('#sideBar').removeClass("changing").addClass("sidebar");},3000);
+                    
                 }
                 
                 
