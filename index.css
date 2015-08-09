@@ -80,7 +80,7 @@ p.para{
 .side-bar-button:active ~ .side-bar {
      -webkit-transition: width 0s;
     -moz-transition: width 0s;
-    transition: wiedth 0s;
+    transition: width 0s;
 }
 
 .transition-helper{
@@ -95,15 +95,17 @@ p.para{
     
 }
 .clicker { 
-    -moz-transition: all .1s ease-in;
-    -o-transition: all .1s ease-in;
-    -webkit-transition: all .1s ease-in;
-    transition: all .1s ease-in;
+    
+    -moz-transition: all .4s ease-in;
+    -o-transition: all .4s ease-in;
+    -webkit-transition: all .4s ease-in;
+    transition: all .4s ease-in;
 }
 
 .clicker:hover { 
     filter: invert(75%);
     -webkit-filter:invert(75%);
+    
 }
 .clickery { 
     -moz-transition: all .1s ease-in;
@@ -202,7 +204,46 @@ p.para{
 }
 
 
-
+.smallBox{
+    opacity: 0.7;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    position: absolute;
+    text-align: center;
+    margin-top: 5vh;
+    width: 20vw;
+    height: 10vh;
+    background-color: #000;
+    transition: ease-out .4s;
+    color: #fff;
+    font-family: fantasy;
+    font-size: 2em;
+    padding-top: 1em;
+    
+}
+.smallBox:hover{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 20vh;
+    opacity: 1;
+    background-color: ;
+}
+.left{
+    margin-left: -2vw;
+    background-attachment: fixed;
+    background-image: url();
+    background-size: cover;
+    background-position: right;
+}
+.left-center{
+    margin-left: 23vw;
+}
+.right-center{
+    margin-left: 47vw;
+}
+.right{
+    margin-left: 70vw;
+}
 
 
 .height-bio{
