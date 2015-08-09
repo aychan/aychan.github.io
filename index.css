@@ -449,6 +449,11 @@ body {
     color: #fff;
     font-size: 7vw;
 }
+.font-con{
+    color: #fff;
+    font-size: 3vw;
+
+    }
 a:hover {
   cursor: pointer; }
 
