@@ -207,7 +207,6 @@ p.para{
 
 .height-bio{
     display: table;
-    /*background-image: url(mountain3.jpg);*/
     background-position: bottom;
     background-size: cover;
     background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(mountain3.jpg);
