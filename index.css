@@ -404,7 +404,10 @@ body {
   position: relative;
   cursor: auto; 
 }
-
+.font-top{
+    color: #fff;
+    font-size: 7vw;
+}
 a:hover {
   cursor: pointer; }
 
