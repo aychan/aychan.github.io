@@ -166,7 +166,7 @@
             }, 1000);
         });
         $('#peakChange').on('click', function(event){
-            $('.side-bar').off;
+            $('.side-bar').off('hover');
             $('html, body').animate({
                 scrollTop: $("#peak").delay(800).offset().top
             }, 1000);
