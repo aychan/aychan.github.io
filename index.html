@@ -41,8 +41,10 @@
                     <li ><a id="medium"><img class="smalz clicker" src="medium.png"></a></li>
                     </ul>
                 </span>
+                <a id="welcome-down"><img  class="smalz clicker centers" src="down.png"></a>
             </div>
       </div>
+        
         
   <div class = "height-bio allCover" >
       <ul class="inline-list">
@@ -157,6 +159,13 @@
         </div>
       </footer>
     </body>
+    <script type="text/javascript">
+        $('#welcome-down').on('click',function(event){
+            $('html, body').animate({
+                scrollTop: $("#welcomePage").offset().top
+            }, 1000);
+        });
+    </script>
 <script type="text/javascript">
             window.onload = addListeners;
             function addListeners(){

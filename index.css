@@ -364,6 +364,9 @@ img.personalPhotos{
 }
 .centers{
     vertical-align: middle;
+    object-position: center;
+    margin-left: 40vw;
+    
 }
 .bobo{
     background-image:  url('http://www.wallpaperhi.com/thumbnails/detail/20120618/seascapes%201920x1200%20wallpaper_www.wallpaperhi.com_60.jpg');
@@ -380,6 +383,7 @@ img.full_fill_top{
     
      background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ), url(nature.jpg);
     background-size:cover;
+    background-attachment: fixed;
     background-repeat: no-repeat;
 }
 .allCover {
