@@ -166,8 +166,9 @@
             }, 1000);
         });
         $('#peakChange').on('click', function(event){
+            $('.side-bar').off;
             $('html, body').animate({
-                scrollTop: $("#peak").offset().top
+                scrollTop: $("#peak").delay(800).offset().top
             }, 1000);
         });
     </script>
