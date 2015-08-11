@@ -11,8 +11,8 @@
         <div class="side-bar" id="sideBar">
             <div class="side-bar-button-container" id="sideBarContainer">
             <ul class="side-bar-button" id="sideBarButton">
-                <li><a href="#"></a></li>
-                <li><a class="button" id="peakChange" onclick="changePage()">Peak</a></li>
+                <!--<li><a href="#"></a></li>-->
+                <li><a class="button" id="peakChange" onclickx="changePage()">Peak</a></li>
                 <li><a href="#hello" class="button" id="welcomeN" onclick="changePage2x()">Welcome</a></li>
                 <li><a href="#resumePage" class="button" id="resumeN" onclick="changePage3()">Resume</a></li>
                 <li><a href="mailto:anthony.me.chan@gmail.com?subject=Hey AyChan!" class="button">Email</a></li>
@@ -161,22 +161,42 @@
     </body>
     <script type="text/javascript">
         $().ready(function(){
-            $('#sideBar').on('hover', function(event){
+            $('#sideBar').on('mouseenter', function(event){
                 $('#sideBar').removeClass('side-bar').addClass('side-bar-revealed');
+                $('#sideBarButton').removeClass('side-bar-button').addClass('side-bar-button-revealed');
+                $('#sideBarContainer').removeClass('side-bar-button-container').addClass('.side-bar-button-container-revealed');
             })
-            alert('hello');
-        });
+            
+             $('#peakChange').on('click', function(event){
+                $('#sideBar').removeClass('side-bar-revealed').addClass('side-bar');
+                $('#sideBarButton').removeClass('side-bar-button-revealed').addClass('side-bar-button');
+                $('#sideBarContainer').removeClass('side-bar-button-container-revealed').addClass('.side-bar-button-container');
+                 
+                 
+                $('html, body').animate({
+                    scrollTop: $("#peak").offset().top
+                }, 1000);
+                     return false;
+             })
+            
+            
+        })
         $('#welcome-down').on('click',function(event){
-            $('html, body').animate({
-                scrollTop: $("#welcomePage").offset().top
-            }, 1000);
+            //alert($("#welcomePage").offset().top);
+            $('html, body').animate(
+                {scrollTop: $("#welcomePage").offset().top},  
+                1000
+            );
+            return false;
         });
-        $('#peakChange').on('click', function(event){
+        /*$('#peakChange').on('click', function(event){
             $('.side-bar').off('hover');
             $('html, body').animate({
-                scrollTop: $("#peak").delay(800).offset().top
+                scrollTop: $("#peak").offset().top
             }, 1000);
-        });
+        })
+        
+        //*/
             
         
     </script>
@@ -194,7 +214,7 @@
                    // document.getElementById('kk').addEventListener("click",scroll,false);
                     
                     
-                    document.getElementById('peakChange').addEventListener("click", changePage, false);
+                    //document.getElementById('peakChange').addEventListener("click", changePage, false);
                     
                    // document.getElementById('welcomeN').addEventListener("click", changePage2, false);
                     
@@ -218,6 +238,7 @@
                    // $("#sidebar").addClass("changing");
                     document.getElementById('sideBar').className = "changing";
                     setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
+                    alert('doin stuff')
                     
                 }
                 function changePage2(){ // to welcome section

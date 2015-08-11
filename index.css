@@ -49,31 +49,26 @@ p.para{
     position: fixed;
     height: 100vh;
     width: 100vw;
-    color: wheat;
     z-index: 50;
     -webkit-transition: all 1s ;
     -moz-transition: all 1s ;
     -o-transition: all 1s;
     transition: all 1s ;
 }
-.side-bar:hover .side-bar-button{
-    width: 100vw;    
-    z-index: 500;
-    margin-top: 16vh;
-    display: table;
-    opacity: 1;
-    text-align: center;
+
+
+.side-bar-button-container{
+    width: 0vh;
+    opacity: 0;
+    -webkit-transition: width .1s;
+    -moz-transition: width .1s;
 }
-.side-bar:hover .side-bar-button-container{
+.side-bar-button-container-revealed{
      width: 100%;
     width: 100vw;
     height: 100%;
     height: 100vh;
     opacity: 1;
-}
-.side-bar-button-container{
-    width: 0vh;
-    opacity: 0;
     -webkit-transition: width .1s;
     -moz-transition: width .1s;
 }
@@ -83,6 +78,19 @@ p.para{
     list-style: none;
     width: 0vw;
     z-index: -100;
+    -moz-transition: opacity .5s ease-in;
+    -o-transition: opacity .5s ease-in;
+    -webkit-transition: opacity .5s ease-in;
+    transition: opacity .5s ease-in;
+}
+.side-bar-button-revealed{
+    width: 100vw;    
+    z-index: 500;
+    margin-top: 16vh;
+    display: table;
+    opacity: 1;
+    text-align: center;
+    list-style: none;
     -moz-transition: opacity .5s ease-in;
     -o-transition: opacity .5s ease-in;
     -webkit-transition: opacity .5s ease-in;
