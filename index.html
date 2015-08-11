@@ -13,7 +13,7 @@
             <ul class="side-bar-button" id="sideBarButton">
                 <!--<li><a href="#"></a></li>-->
                 <li><a class="button" id="peakChange" onclickx="changePage()">Peak</a></li>
-                <li><a href="#hello" class="button" id="welcomeN" onclick="changePage2x()">Welcome</a></li>
+                <li><a href="#hello" class="button" id="welcomeN" onclickx="changePage2x()">Welcome</a></li>
                 <li><a href="#resumePage" class="button" id="resumeN" onclick="changePage3()">Resume</a></li>
                 <li><a href="mailto:anthony.me.chan@gmail.com?subject=Hey AyChan!" class="button">Email</a></li>
             </ul>  
@@ -178,25 +178,28 @@
                 }, 1000);
                      return false;
              })
+             $('#welcomeN').on('click', function(event){
+                $('#sideBar').removeClass('side-bar-revealed').addClass('side-bar');
+                $('#sideBarButton').removeClass('side-bar-button-revealed').addClass('side-bar-button');
+                $('#sideBarContainer').removeClass('side-bar-button-container-revealed').addClass('.side-bar-button-container');
+                 
+                $('html, body').animate({
+                    scrollTop: $("#welcomePage").offset().top
+                }, 1000);
+                     return false;
+             })
             
             
         })
-        $('#welcome-down').on('click',function(event){
+        /*$('#welcome-down').on('click',function(event){
             //alert($("#welcomePage").offset().top);
             $('html, body').animate(
                 {scrollTop: $("#welcomePage").offset().top},  
                 1000
             );
             return false;
-        });
-        /*$('#peakChange').on('click', function(event){
-            $('.side-bar').off('hover');
-            $('html, body').animate({
-                scrollTop: $("#peak").offset().top
-            }, 1000);
-        })
+        });*/
         
-        //*/
             
         
     </script>
