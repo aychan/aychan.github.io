@@ -41,9 +41,20 @@ p.para{
     -o-transition: all 1s;
     transition: all 1s ;
 }
-.side-bar:hover{
-    width: 100vw;  
+.side-bar-revealed{
+    margin-right: 0vw;
     opacity: 1;
+    float: left;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), url(mountain.jpg);
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    color: wheat;
+    z-index: 50;
+    -webkit-transition: all 1s ;
+    -moz-transition: all 1s ;
+    -o-transition: all 1s;
+    transition: all 1s ;
 }
 .side-bar:hover .side-bar-button{
     width: 100vw;    

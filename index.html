@@ -160,6 +160,12 @@
       </footer>
     </body>
     <script type="text/javascript">
+        $().ready(function(){
+            $('#sideBar').on('hover', function(event){
+                $('#sideBar').removeClass('side-bar').addClass('side-bar-revealed');
+            })
+            alert('hello');
+        });
         $('#welcome-down').on('click',function(event){
             $('html, body').animate({
                 scrollTop: $("#welcomePage").offset().top
@@ -171,6 +177,8 @@
                 scrollTop: $("#peak").delay(800).offset().top
             }, 1000);
         });
+            
+        
     </script>
 <script type="text/javascript">
             window.onload = addListeners;
