@@ -3,10 +3,6 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="index.css"/>
-<<<<<<< HEAD
-       
-=======
->>>>>>> 3e79a7a326dfcba0b474a632ba87b1c26a37e962
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     </head>
     <header></header>
@@ -51,10 +47,10 @@
         
   <div class = "height-bio allCover" >
       <ul class="inline-list">
-          <li><div class="smallBox left"><div class="font-con">BERTHIAUME</div><div class="hidden-info font-small">hello thre there herelj</div></div></li>
-          <li><div class="smallBox left-center"><div class="font-con">HACKUMASS</div><div class="hidden-info font-small">placeholder</div></div></li>
-          <li><div class="smallBox right-center"><div class="font-con">TEDxAmherst</div><div class="hidden-info font-small">placeholder</div></div></li>
-          <li><div class="smallBox right"><div class="font-con">ABOUT</div><div class="hidden-info font-small">placeholder</div></div></li>
+          <li><div class="smallBox left" id="boxLeft"><div class="font-con">BERTHIAUME</div><div class="hidden-info font-small" id="boxLeftContent">hello thre there herelj</div></div></li>
+          <li><div class="smallBox left-center" id="boxLeftCenter"><div class="font-con">HACKUMASS</div><div class="hidden-info font-small" id="boxLeftCenterContent">placeholder</div></div></li>
+          <li><div class="smallBox right-center" id="boxRightCenter"><div class="font-con">TEDxAmherst</div><div class="hidden-info font-small" id="boxRightCenterContent">placeholder</div></div></li>
+          <li><div class="smallBox right" id="boxRight"><div class="font-con">ABOUT</div><div class="hidden-info font-small" id="boxRightContent">placeholder</div></div></li>
             </ul>
       <div  class="large-8 columns" style="color: white;" id="hello">
            
@@ -95,62 +91,7 @@
         
         
         
-  <!--  <div class="row allCover" style="color:white; background-color:#28626E;" id="resumePage">
-        <!--<div class="large-12 columns" id="resumePage2" >
-            <div class="large-6 columns">
-                <div class="large-12 columns height-list">
-                    <div class="large-6 columns">
-                    <p>Intern for the Berthiaume Center for Entrepreneurship </p>
-                        <p>[details]</p>
-                    </div>
-                    <div class="large-6 columns">
-                    <p>Sponsorship Lead, HackUMass</p>
-                        <p>[details]</p>
-                    </div>
-                </div>
-            </div>
-            <div class="large-6 columns">
-            
-                <div class="large-12 columns height-list">
-                    <div class="large-6 columns">
-                    <p>AT/IV Director, TEDxAmherst</p>
-                        <p>[details]</p>
-                    </div>
-                    <div class="large-6 columns">
-                    <p>Communications Head, UMass Entrepreneurship Club</p>
-                        <p>[details]</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> 
-   <!--<div class="row" style="color:white">
-        <div class="large-12 columns" style="background-color:#28626E">
-            <h2 id="resume" style="color:white">Other than that,</h2>
-            <div class="large-6 columns">
-            <h5>Hobbies include,</h5>
-                <div class="large-12 columns height-list">
-                    <div class="large-6 columns">
-                    <p>Archery</p>
-                    </div>
-                    <div class="large-6 columns">
-                    <p>Jazz Piano</p>
-                    </div>
-                </div>
-            </div>
-            <div class="large-6 columns">
-            <h5>Overall</h5>
-                <div class="large-12 columns height-list">
-                    <div class="large-6 columns">
-                    <p>item 7</p>
-                    </div>
-                    <div class="large-6 columns">
-                    <p>item 8</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>    -->    
+  
       <footer class="row banner_bot">
         <div class="large-12 columns">
           <hr/>
@@ -192,16 +133,24 @@
                      return false;
              });
             
-            
+            $('#boxLeft').mouseenter(function(){
+                $('#boxLeft').removeClass('smallBox').addClass('smallBox-revealed');
+                $('#boxLeftContent').removeClass('hidden-info').addClass('hidden-info-revealed');
+            });
+            $('#boxLeftCenter').mouseenter(function(){
+                $('#boxLeftCenter').removeClass('smallBox').addClass('smallBox-revealed');
+                $('#boxLeftCenterContent').removeClass('hidden-info').addClass('hidden-info-revealed');
+            });
+            $('#boxRightCenter').mouseenter(function(){
+                $('#boxRightCenter').removeClass('smallBox').addClass('smallBox-revealed');
+                $('#boxRightCenterContent').removeClass('hidden-info').addClass('hidden-info-revealed');
+            });
+            $('#boxRight').mouseenter(function(){
+                $('#boxRight').removeClass('smallBox').addClass('smallBox-revealed');
+                $('#boxRightContent').removeClass('hidden-info').addClass('hidden-info-revealed');
+            });
         });
-        /*$('#welcome-down').on('click',function(event){
-            //alert($("#welcomePage").offset().top);
-            $('html, body').animate(
-                {scrollTop: $("#welcomePage").offset().top},  
-                1000
-            );
-            return false;
-        });*/
+       
         
             
         

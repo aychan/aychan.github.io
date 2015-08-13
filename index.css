@@ -240,7 +240,7 @@ p.para{
     font-size: 2em;
     padding-top: 1em;
 }
-.smallBox:hover{
+.smallBox-revealed{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     height: 90vh;
@@ -256,10 +256,7 @@ p.para{
     font-size: 2em;
     padding-top: 1em;
 }
-.smallBox:hover .hidden-info{
-    opacity: 1;
-    font-size: .55em;
-}
+
 .height-bio{
     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), url(woodTable.jpg);
 }
@@ -272,7 +269,11 @@ p.para{
     font-size: 1em;
     color: #fff;
 }
-
+.hidden-info-revealed{
+    opacity: 1;
+    font-size: .55em;
+    transition: .55s
+}
 .left{
     margin-left: -2vw;
     background-attachment: fixed;
