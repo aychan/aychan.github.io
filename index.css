@@ -246,6 +246,15 @@ p.para{
     height: 90vh;
     opacity: 1;
     margin-top: 3vh;
+    position: absolute;
+    text-align: center;
+    width: 20vw;
+    background-color: #000;
+    transition: ease-out .4s;
+    color: #fff;
+    font-family: fantasy;
+    font-size: 2em;
+    padding-top: 1em;
 }
 .smallBox:hover .hidden-info{
     opacity: 1;
