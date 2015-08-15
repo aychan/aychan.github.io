@@ -271,7 +271,7 @@ p.para{
 }
 .height-bio-hack{
     transition: ease-out 1s;
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), url(hack.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), url(hackathon.jpg);
     background-position: center;
     background-size: cover;
 }
