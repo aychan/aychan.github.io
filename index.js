@@ -14,7 +14,7 @@
                  
                 $('html, body').animate({
                     scrollTop: $("#peak").offset().top
-                }, 1500);
+                }, 1250);
                      return false;
              });
              $('#welcomeN').click(function(){
@@ -24,7 +24,7 @@
                  
                 $('html, body').animate({
                     scrollTop: $("#welcomePage").offset().top
-                }, 1250);
+                }, 1500);
                      return false;
              });
             //Berthiaume
