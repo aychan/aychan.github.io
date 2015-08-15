@@ -27,7 +27,7 @@
                 }, 1250);
                      return false;
              });
-            
+            //Berthiaume
             $('#boxLeft').mouseenter(function(){
                 $('#boxLeft').removeClass('smallBox').addClass('smallBox-revealed');
                 $('#boxLeftContent').removeClass('hidden-info').addClass('hidden-info-revealed');
@@ -36,6 +36,12 @@
                 $('#boxLeft').removeClass('smallBox-revealed').addClass('smallBox');
                 $('#boxLeftContent').removeClass('hidden-info-revealed').addClass('hidden-info');
             });
+            $('#boxLeft').click(function(){
+                $('#hackVid').hide();
+            });
+            
+            //hackumass
+            $('#hackVid').hide();
             $('#boxLeftCenter').mouseenter(function(){
                 $('#boxLeftCenter').removeClass('smallBox').addClass('smallBox-revealed');
                 $('#boxLeftCenterContent').removeClass('hidden-info').addClass('hidden-info-revealed');
@@ -44,6 +50,13 @@
                 $('#boxLeftCenter').removeClass('smallBox-revealed').addClass('smallBox');
                 $('#boxLeftCenterContent').removeClass('hidden-info-revealed').addClass('hidden-info');
             });
+            $('#boxLeftCenter').click(function(){
+                $('#bio-content').removeClass().addClass('height-bio-hack allCover');
+                $('#hackVid').show();
+                $('#hacks').removeClass('font-con').addClass('font-con-revealed');//should turn font color orange.
+            });
+            
+            //ted
             $('#boxRightCenter').mouseenter(function(){
                 $('#boxRightCenter').removeClass('smallBox').addClass('smallBox-revealed');
                 $('#boxRightCenterContent').removeClass('hidden-info').addClass('hidden-info-revealed');
@@ -52,6 +65,12 @@
                 $('#boxRightCenter').removeClass('smallBox-revealed').addClass('smallBox');
                 $('#boxRightCenterContent').removeClass('hidden-info-revealed').addClass('hidden-info');
             });
+            $('#boxRightCenter').click(function(){
+                $('#bio-content').removeClass().addClass('height-bio-ted allCover');
+                $('#hackVid').hide();
+            });
+            
+            //about
             $('#boxRight').mouseenter(function(){
                 $('#boxRight').removeClass('smallBox').addClass('smallBox-revealed');
                 $('#boxRightContent').removeClass('hidden-info').addClass('hidden-info-revealed');
@@ -59,6 +78,10 @@
             $('#boxRight').mouseleave(function(){
                 $('#boxRight').removeClass('smallBox-revealed').addClass('smallBox');
                 $('#boxRightContent').removeClass('hidden-info-revealed').addClass('hidden-info');
+            });
+            $('#boxRight').click(function(){
+                $('#bio-content').removeClass().addClass('height-bio allCover');
+                $('#hackVid').hide();
             });
         });
  

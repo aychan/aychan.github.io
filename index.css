@@ -243,15 +243,17 @@ p.para{
 .smallBox-revealed{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
-    height: 90vh;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    height: 20vh;
     opacity: 1;
     margin-top: 3vh;
     position: absolute;
     text-align: center;
     width: 20vw;
     background-color: #000;
-    transition: ease-out .4s;
-    color: #fff;
+    transition: ease-out .5s;
+    color: #D66A49;
     font-family: fantasy;
     font-size: 2em;
     padding-top: 1em;
@@ -259,9 +261,19 @@ p.para{
 
 .height-bio{
     background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), url(woodTable.jpg);
+    
 }
-.smallBox:hover .height-bio{
-    background-image: url(nature.jpg);
+.height-bio-ted{
+    transition: ease-out 1s;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), url(ted.jpg);
+    background-position: center;
+    background-size: contain;
+}
+.height-bio-hack{
+    transition: ease-out 1s;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), url(hack.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .hidden-info{
     opacity: 0;
@@ -296,6 +308,13 @@ p.para{
 
 .height-list{
  height: 75vh;
+}
+.videos{
+    margin-left: 5vw ;
+    margin-right: auto;
+    float: left;
+    margin-top: 30vh;
+    justify-content: center;
 }
 img.smalz{
     display: table;
@@ -500,8 +519,12 @@ body {
 }
 .font-con{
     color: #fff;
-    font-size: 3vw;
+    font-size: 2vw;
     }
+.font-con-revealed{
+    color: D66A49;
+    font-size: 2vw;
+}
 .font-small{
     color: #fff;
     font-size: .5em;

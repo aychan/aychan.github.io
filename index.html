@@ -11,7 +11,7 @@
         <div class="side-bar" id="sideBar">
             <div class="side-bar-button-container" id="sideBarContainer">
             <ul class="side-bar-button" id="sideBarButton">
-                <!--<li><a href="#"></a></li>-->
+               
                 <li><a class="button" id="peakChange">Peak</a></li>
                 <li><a href="#hello" class="button" id="welcomeN">Welcome</a></li>
                 <li><a href="#resumePage" class="button" id="resumeN">Resume</a></li>
@@ -31,28 +31,27 @@
             <div class="topper_bot element_animate_2 " id="peak3">
                   
                 <span id="header-content">
-                    
                     <ul class="inline-list">
-                      
-                    <li><a id="fb"><img class="smalz clicker" src="fb.gif"></a></li>
-                    <li><a id="twitter"><img class="smalz clicker" src="tweet.png"></a></li>
-                    <li><a id="linkedin"><img class="smalz clicker" src="in.png"></a></li>
-                    <li><a id="gitHub"><img class="smalz clicker" src="github.png"></a></li>
-                    <li ><a id="medium"><img class="smalz clicker" src="medium.png"></a></li>
+                        <li><a id="fb"><img class="smalz clicker" src="fb.gif"></a></li>
+                        <li><a id="twitter"><img class="smalz clicker" src="tweet.png"></a></li>
+                        <li><a id="linkedin"><img class="smalz clicker" src="in.png"></a></li>
+                        <li><a id="gitHub"><img class="smalz clicker" src="github.png"></a></li>
+                        <li ><a id="medium"><img class="smalz clicker" src="medium.png"></a></li>
                     </ul>
                 </span>
-                <a id="welcome-down"><img  class="smalz clicker centers" src="down.png"></a>
+                
             </div>
       </div>
         
         
-  <div class = "height-bio allCover" >
+  <div class = "height-bio allCover" id="bio-content">
       <ul class="inline-list">
-          <li><div class="smallBox left" id="boxLeft"><div class="font-con">BERTHIAUME</div><div class="hidden-info font-small" id="boxLeftContent">hello thre there herelj</div></div></li>
-          <li><div class="smallBox left-center" id="boxLeftCenter"><div class="font-con">HACKUMASS</div><div class="hidden-info font-small" id="boxLeftCenterContent">placeholder</div></div></li>
-          <li><div class="smallBox right-center" id="boxRightCenter"><div class="font-con">TEDxAmherst</div><div class="hidden-info font-small" id="boxRightCenterContent">placeholder</div></div></li>
-          <li><div class="smallBox right" id="boxRight"><div class="font-con">ABOUT</div><div class="hidden-info font-small" id="boxRightContent">placeholder</div></div></li>
+          <li><div class="smallBox left" id="boxLeft"><div id="bert" class="font-con">BERTHIAUME</div><div class="hidden-info font-small" id="boxLeftContent">Summer Intern, Summer Camp TA</div></div></li>
+          <li><div class="smallBox left-center" id="boxLeftCenter"><div id="hacks" class="font-con">HACKUMASS</div><div class="hidden-info font-small" id="boxLeftCenterContent"><a href="http://hackumass.com">http://hackumass.com</a></div></div></li>
+          <li><div class="smallBox right-center" id="boxRightCenter"><div id="teda" class="font-con">TEDxAmherst</div><div class="hidden-info font-small" id="boxRightCenterContent">AV/IT Director <a href="http://tedxamherst.org/#/home">TedxAmherst.org</a></div></div></li>
+          <li><div class="smallBox right" id="boxRight"><div id="about" class="font-con">ABOUT</div><div class="hidden-info font-small" id="boxRightContent">placeholder</div></div></li>
             </ul>
+      <iframe id="hackVid"  class="videos" width="560 auto" height="315" src="https://www.youtube.com/embed/6Fym38x9c8o" frameborder="0" allowfullscreen></iframe>
       <div  class="large-8 columns" style="color: white;" id="hello">
            
       <div class="row">
@@ -72,22 +71,8 @@
         </div>
       </div>
 
-      <div class="row" id="welcomePage">
-       <!-- <div class="large-8 columns" style="color: white;">
-          <h4 style="color: white;">This is content section two.</h4>
      
-          <p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa. Boudin aliqua adipisicing rump corned beef.</p>
-     
-          <p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow. Nulla corned beef sunt ball tip, qui bresaola enim jowl. Capicola short ribs minim salami nulla nostrud pastrami.</p>
-        </div>  -->      
-      </div>  
-      <div class="row">
-          <!--<ul class="inline-list">
-        <div class="large-4 columns"><img class="personalPhotos" src="HEADSHOT.jpg"></div>
-        <div class="large-4 columns"><img class="personalPhotos" src="fam.jpg"></div>
-        <div class="large-4 columns"><img class="personalPhotos" src="propic.jpg"></div>   
-          </ul>-->
-    </div>
+      
 </div>      
         
         
@@ -104,76 +89,7 @@
         </div>
       </footer>
     </body>
-    <!--
-    <script type="text/javascript">
-        $(function(){
-            $('#sideBar').mouseenter(function(){
-                $('#sideBar').removeClass('side-bar').addClass('side-bar-revealed');
-                $('#sideBarButton').removeClass('side-bar-button').addClass('side-bar-button-revealed');
-                $('#sideBarContainer').removeClass('side-bar-button-container').addClass('side-bar-button-container-revealed');
-            });
-            
-             $('#peakChange').click(function(){
-                $('#sideBar').removeClass('side-bar-revealed').addClass('side-bar');
-                $('#sideBarButton').removeClass('side-bar-button-revealed').addClass('side-bar-button');
-                $('#sideBarContainer').removeClass('side-bar-button-container-revealed').addClass('side-bar-button-container');
-                 
-                 
-                $('html, body').animate({
-                    scrollTop: $("#peak").offset().top
-                }, 1500);
-                     return false;
-             });
-             $('#welcomeN').click(function(){
-                $('#sideBar').removeClass('side-bar-revealed').addClass('side-bar');
-                $('#sideBarButton').removeClass('side-bar-button-revealed').addClass('side-bar-button');
-                $('#sideBarContainer').removeClass('side-bar-button-container-revealed').addClass('side-bar-button-container');
-                 
-                $('html, body').animate({
-                    scrollTop: $("#welcomePage").offset().top
-                }, 1250);
-                     return false;
-             });
-            
-            $('#boxLeft').mouseenter(function(){
-                $('#boxLeft').removeClass('smallBox').addClass('smallBox-revealed');
-                $('#boxLeftContent').removeClass('hidden-info').addClass('hidden-info-revealed');
-            });
-            $('#boxLeft').mouseleave(function(){
-                $('#boxLeft').removeClass('smallBox-revealed').addClass('smallBox');
-                $('#boxLeftContent').removeClass('hidden-info-revealed').addClass('hidden-info');
-            });
-            $('#boxLeftCenter').mouseenter(function(){
-                $('#boxLeftCenter').removeClass('smallBox').addClass('smallBox-revealed');
-                $('#boxLeftCenterContent').removeClass('hidden-info').addClass('hidden-info-revealed');
-            });
-            $('#boxLeftCenter').mouseleave(function(){
-                $('#boxLeftCenter').removeClass('smallBox-revealed').addClass('smallBox');
-                $('#boxLeftCenterContent').removeClass('hidden-info-revealed').addClass('hidden-info');
-            });
-            $('#boxRightCenter').mouseenter(function(){
-                $('#boxRightCenter').removeClass('smallBox').addClass('smallBox-revealed');
-                $('#boxRightCenterContent').removeClass('hidden-info').addClass('hidden-info-revealed');
-            });
-            $('#boxRightCenter').mouseleave(function(){
-                $('#boxRightCenter').removeClass('smallBox-revealed').addClass('smallBox');
-                $('#boxRightCenterContent').removeClass('hidden-info-revealed').addClass('hidden-info');
-            });
-            $('#boxRight').mouseenter(function(){
-                $('#boxRight').removeClass('smallBox').addClass('smallBox-revealed');
-                $('#boxRightContent').removeClass('hidden-info').addClass('hidden-info-revealed');
-            });
-            $('#boxRight').mouseleave(function(){
-                $('#boxRight').removeClass('smallBox-revealed').addClass('smallBox');
-                $('#boxRightContent').removeClass('hidden-info-revealed').addClass('hidden-info');
-            });
-        });
-       
-        
-            
-        
-    </script>
--->
+    
 <script type="text/javascript">
             window.onload = addListeners;
             function addListeners(){
@@ -228,19 +144,7 @@
                     alert("hello");
                 }
                 
-              /*  function changePage3(){ //to resume section
-                    document.getElementById('sideBar').className = "changing";
-                    document.getElementById('peak').className = "toggleWelcome";
-                    document.getElementById('welcomePage').className = "toggleWelcome";
-                    setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
-                }
-                function test(){
-                    $("#sideBar").addClass("changing").removeClass("side-bar");
-                    //$("#sideBar").delay(3000).removeClass("changing").delay(3000).addClass("side-bar");
-                    setTimeout(function(){$('#sideBar').removeClass("changing").addClass("sidebar");},3000);
-                    
-                }
-                */
+              
                 
         </script>
 </html>
