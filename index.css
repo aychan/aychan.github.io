@@ -260,7 +260,14 @@ p.para{
 }
 
 .height-bio{
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), url(woodTable.jpg);
+    /*background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), black;*/
+    border-top: solid 2px grey;
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7) ), url(nature.jpg);
+    background-size:cover cover;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
     
 }
 .height-bio-ted{
@@ -431,8 +438,10 @@ img.full_fill_top{
     
      background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ), url(nature.jpg);
     background-size:cover;
+    background-position: center center;
     background-attachment: fixed;
     background-repeat: no-repeat;
+    
 }
 .allCover {
     width: 100%;
