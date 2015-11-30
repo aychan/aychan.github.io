@@ -1,5 +1,17 @@
 
         $(function(){
+            
+            
+            //links to other webpages
+            $('#fb').click(function(){window.open( "https://www.facebook.com/anthony.chan.9803")});
+            $('#twitter').click(function(){window.open( "https://twitter.com/ay_chanboy")});
+            $('#linkedin').click(function(){window.open( "https://www.linkedin.com/in/anthonyychan")});
+            $('#insta').click(function(){window.open( "https://instagram.com/ay__chan/")});
+            $('#medium').click(function(){window.open( "https://medium.com/@aychan")});
+            $('#gitHub').click(function(){window.open( "https://github.com/aychan")});
+            //end link functions
+            
+            
             $('#sideBar').mouseenter(function(){
                 $('#sideBar').removeClass('side-bar').addClass('side-bar-revealed');
                 $('#sideBarButton').removeClass('side-bar-button').addClass('side-bar-button-revealed');

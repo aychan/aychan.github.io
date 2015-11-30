@@ -1,3 +1,6 @@
+*{
+    font-family: 'Oxygen', sans-serif;
+}
 #header{position:relative;}
 #header-content{
     position: absolute;
@@ -11,6 +14,9 @@
     outline-style: none;
     text-align: center;
     align-content: center;
+}
+.indent-center{
+    margin: 10px 5vw 10px 5vw;
 }
 .top_name{
     font-size: 4vw;     
@@ -30,7 +36,7 @@ p.para{
     margin-right: 0vw;
     opacity: 0;
     float: left;
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), url(mountain.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), url(background/mountain.jpg);
     position: fixed;
     height: 100vh;
     width: 1.0vw;
@@ -45,7 +51,7 @@ p.para{
     margin-right: 0vw;
     opacity: 1;
     float: left;
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), url(mountain.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), url(background/mountain.jpg);
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -262,7 +268,7 @@ p.para{
 .height-bio{
     /*background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8) ), black;*/
     border-top: solid 2px grey;
-    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7) ), url(nature.jpg);
+    background: linear-gradient( rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7) ), url(background/nature.jpg);
     background-size:cover cover;
     background-position: center center;
     background-attachment: fixed;
@@ -436,7 +442,7 @@ img.full_fill_top{
 }
 .full_fill{
     
-     background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ), url(nature.jpg);
+     background: linear-gradient( rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2) ), url(background/nature.jpg);
     background-size:cover;
     background-position: center center;
     background-attachment: fixed;
@@ -4072,6 +4078,7 @@ ul.pagination {
 
 /* Panels */
 .panel {
+    opacity: 0.95;
   border-style: solid;
   border-width: 1px;
   border-color: #d8d8d8;

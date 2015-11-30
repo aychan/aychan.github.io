@@ -3,9 +3,12 @@
     <head>
         <title>AyChan</title>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+        <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="index.css"/>
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        <script src="index.js"></script>
+        <script src="assets/js/index.js"></script>
     </head>
     <header></header>
     <body>
@@ -22,22 +25,27 @@
         </div>
         
         <div class="full_fill allCover" id="peak">
+                
             
             <div class="topper element_animate top_name" id="peak2"> 
+                
                 <div class="font-top-chinese">陳宇豐</div>
                 <hr>
                 <div class="font-top">Anthony Chan</div>
                <hr>
             </div>
+            <blockquote>
+                        <h4 style="color:white;">Move your cursor to the left to open the navigation bar</h4>
+                </blockquote>
             <div class="topper_bot element_animate_2 " id="peak3">
                   
                 <span id="header-content">
                     <ul class="inline-list">
-                        <li><a id="fb"><img class="smalz clicker" src="fb.gif"></a></li>
-                        <li><a id="twitter"><img class="smalz clicker" src="tweet.png"></a></li>
-                        <li><a id="linkedin"><img class="smalz clicker" src="in.png"></a></li>
-                        <li><a id="gitHub"><img class="smalz clicker" src="github.png"></a></li>
-                        <li ><a id="medium"><img class="smalz clicker" src="medium.png"></a></li>
+                        <li><a id="fb"><img class="smalz clicker" src="icon/fb.gif"></a></li>
+                        <li><a id="twitter"><img class="smalz clicker" src="icon/tweet.png"></a></li>
+                        <li><a id="linkedin"><img class="smalz clicker" src="icon/in.png"></a></li>
+                        <li><a id="gitHub"><img class="smalz clicker" src="icon/github.png"></a></li>
+                        <li ><a id="medium"><img class="smalz clicker" src="icon/medium.png"></a></li>
                     </ul>
                 </span>
                 
@@ -46,96 +54,41 @@
         
         <div id="welcomePage"></div>
   <div class = "  height-bio allCover" id="bio-content">
-      <h1>Hey there!</h1>
-     <!-- <ul class="inline-list">
-          <li><div class="smallBox left" id="boxLeft"><div id="bert" class="font-con">BERTHIAUME</div><div class="hidden-info font-small" id="boxLeftContent">Summer Intern, Summer Camp TA</div></div></li>
-          <li><div class="smallBox left-center" id="boxLeftCenter"><div id="hacks" class="font-con">HACKUMASS</div><div class="hidden-info font-small" id="boxLeftCenterContent"><a href="http://hackumass.com">http://hackumass.com</a></div></div></li>
-          <li><div class="smallBox right-center" id="boxRightCenter"><div id="teda" class="font-con">TEDxAmherst</div><div class="hidden-info font-small" id="boxRightCenterContent">AV/IT Director <a href="http://tedxamherst.org/#/home">TedxAmherst.org</a></div></div></li>
-          <li><div class="smallBox right" id="boxRight"><div id="about" class="font-con">ABOUT</div><div class="hidden-info font-small" id="boxRightContent">placeholder</div></div></li>
-            </ul>
-      <iframe id="hackVid"  class="videos" width="560 auto" height="315" src="https://www.youtube.com/embed/6Fym38x9c8o" frameborder="0" allowfullscreen></iframe>
-      <div  class="large-8 columns" style="color: white;" id="hello">
-           
-      <div class="row">
-          
+      </br>
+      
+      <div class="indent-center panel panel-default">
+          <div class="panel-body">
+            Basic panel example
+          </div>
         </div>
-      </div>
+        
+        <div class="indent-center">
+                <applet code = 'appletComponentArch.DynamicTreeApplet' 
+    archive = 'DynamicTreeDemo.jar'
+    width = 300
+    height = 300>
+    <param name="permissions" value="sandbox" />
+</applet>
+            
+            
+        
+        
+        
+        
+        
+        <div class="row">
+  
+        
+     <!--
+      <iframe id="hackVid"  class="videos" width="560 auto" height="315" src="https://www.youtube.com/embed/6Fym38x9c8o" frameborder="0" allowfullscreen></iframe>
+      
     -->
      
       
 </div>      
-        
-        
-        
-  
-      <!--
-        footer class="row banner_bot">
-        <div class="large-12 columns">
-          <hr/>
-          <div class="row">
-            <div class="large-4 columns">
-                <p>Thanks <a href="http://foundation.zurb.com/" target="_blank">Foundation</a> for the template!</p>
-            </div>
-          </div>
-        </div>
-      </footer>-->
+
+         <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
     </body>
-    
-<script type="text/javascript">
-            window.onload = addListeners;
-            function addListeners(){
-                if(window.addEventListener){
-                    document.getElementById('fb').addEventListener("click", toFB, false); 
-                    document.getElementById('twitter').addEventListener("click", toTwitter, false);
-                    document.getElementById('linkedin').addEventListener("click", toLinkedin, false);
-                    //document.getElementById('insta').addEventListener("click", toInsta, false);
-                    document.getElementById('medium').addEventListener("click", toMedium, false);
-                    document.getElementById('gitHub').addEventListener("click", toGit, false);
-                    
-                   // document.getElementById('kk').addEventListener("click",scroll,false);
-                    
-                    
-                    //document.getElementById('peakChange').addEventListener("click", changePage, false);
-                    
-                   // document.getElementById('welcomeN').addEventListener("click", changePage2, false);
-                    
-                    //document.getElementById('resumeN').addEventListener("click", changePage3, false);
-                    
-                    
-                    
-                 }else if(window.attachElement){
-                //code usually for IE 8 or earlier
-                }
-                function toFB(){window.open("https://www.facebook.com/anthony.chan.9803");}
-                function toTwitter(){window.open("https://twitter.com/ay_chanboy");}
-                function toLinkedin(){window.open("https://www.linkedin.com/in/anthonyychan");}
-                function toInsta(){window.open("https://instagram.com/ay__chan/");}
-                function toMedium(){window.open("https://medium.com/@aychan");}
-                function toGit(){window.open("https://github.com/aychan");}
-            }
-                
-                function changePage(){ // to top
-                    //$("#sidebar").removeClass("side-bar");
-                   // $("#sidebar").addClass("changing");
-                    document.getElementById('sideBar').className = "changing";
-                    setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},2500);
-                    alert('doin stuff')
-                    
-                }
-                function changePage2(){ // to welcome section
-                    $("#sidebar").css('changing');
-                    //document.getElementById('sideBar').className = "changing";
-                    document.getElementById('peak').className = "toggleWelcome";
-                    document.getElementById('peak2').className = "toggleWelcome";
-                    document.getElementById('peak3').className = "toggleWelcome";
-                    document.getElementById('resumePage').className = "toggleWelcome";
-                    document.getElementById('resumePage2').className = "toggleWelcome";
-                    setTimeout(function(){document.getElementById('sideBar').className = "side-bar"},3000);
-                    $("peak2").hide();
-                    alert("hello");
-                }
-                
-              
-                
-        </script>
+
 </html>
