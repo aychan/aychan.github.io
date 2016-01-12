@@ -1,40 +1,18 @@
 
         $(function(){
+            $('#Home_Page').show();
             $('#About_Page').hide();
             $('#Resume_Page').hide();
             $('#Experience_Page').hide();
             $('#Contact_Page').hide();
-            $('#Home_Page').show();
-            
-            //expansion of experience info
-            $('.Expand_Box').each(function(){
-               $(this).hide(); 
-            });
-            $('.Expand_Back').each(function(){
-               $(this).hide(); 
-            });
-            
-            $('.Experience_Box').hover(function(){
-                $('.Expand_Box',this).fadeToggle(150);
-            });
-            $('.Experience_Box').click(function(){
-                $('.Expand_Box',this).hide();
-                $(this).removeClass("Experience_Box").addClass("Experience_Box_Expanded");
-                $('.Expand_Box',this).fadeIn(100);
-            }); 
-            $('.Expand_Back').click(function(){
-                $(this).parent().removeClass("Experience_Box_Expanded").addClass("Experience_Box"); 
-            });
-            
-            //end expansion
             
             //links to other webpages
-           /* $('#fb').click(function(){window.open( "https://www.facebook.com/anthony.chan.9803")});
+            $('#fb').click(function(){window.open( "https://www.facebook.com/anthony.chan.9803")});
             $('#twitter').click(function(){window.open( "https://twitter.com/ay_chanboy")});
             $('#linkedin').click(function(){window.open( "https://www.linkedin.com/in/anthonyychan")});
             $('#insta').click(function(){window.open( "https://instagram.com/ay__chan/")});
             $('#medium').click(function(){window.open( "https://medium.com/@aychan")});
-            $('#gitHub').click(function(){window.open( "https://github.com/aychan")});*/
+            $('#gitHub').click(function(){window.open( "https://github.com/aychan")});
             //end link functions
             
             
@@ -46,7 +24,6 @@
             $('.Nav_Tab_OFF').mouseleave(function(){
                  $(this).removeClass('Nav_Tab_ON').addClass('Nav_Tab_OFF');    
             });
-            
             ///////////////
             $('#Home').click(function(){
                     $('#About_Page').hide();
