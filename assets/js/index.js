@@ -1,5 +1,8 @@
 
         $(function(){
+            
+              
+          
             $('#About_Page').hide();
             $('#Resume_Page').hide();
             $('#Experience_Page').hide();
@@ -14,17 +17,39 @@
                $(this).hide(); 
             });
             
-            $('.Experience_Box').hover(function(){
-                $('.Expand_Box',this).fadeToggle(150);
+            $('.Experience_Box').mouseover(function(){
+                $('.Expand_Box',this).show();
             });
-            $('.Experience_Box').click(function(){
+            $('.Experience_Box').mouseout(function(){
                 $('.Expand_Box',this).hide();
-                $(this).removeClass("Experience_Box").addClass("Experience_Box_Expanded");
-                $('.Expand_Box',this).fadeIn(100);
+            });
+            
+            $('.Experience_Box').click(function(){
+                $('.Expand_Box',this).remove();
+                $('#Skills_Container').hide();
+                
+                
+                $(this).removeClass('Experience_Box').addClass('Experience_Box_Expanded');
+                $('.Expand_Back',this).fadeIn(100);
+            
+                $('.Expand_Back').click(function(){
+                        ($(this).parent()).removeClass('Experience_Box_Expanded').addClass('Experience_Box'); 
+                       // $('#Skills_Container').show();
+                        alert("retracting");
+                            
+                });
+                
             }); 
-            $('.Expand_Back').click(function(){
+            
+            /*$('.Expand_Back').click(function(){
                 $(this).parent().removeClass("Experience_Box_Expanded").addClass("Experience_Box"); 
             });
+            
+            $("#Experience_Page :not('.Experience_Box') ").click(function(){
+                alert("finally");
+            });*/
+           
+            
             
             //end expansion
             

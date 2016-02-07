@@ -7,12 +7,13 @@
 .Main_Container{
     display: flex;
     flex-wrap: nowrap; /*for now*/
+    background-image:url(background/shore.jpg);
 }
 .Nav_Tab_Container{
     
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
+    flex-direction: row;
     height: 100vh ;
     align-content: center;
     justify-content: center; /*makes the navbar centered vertically*/
@@ -50,7 +51,7 @@
     justify-content: center;
     align-items: center;
     border-left: solid 1px black;
-    width: 90vw;
+    width: auto;
     
 }
 .Comment_Large{
@@ -64,7 +65,7 @@
     font-size: 1.4em;
     display: flex;
     flex-wrap: wrap;
-    /*justify-content: center;*/
+    justify-content: center;
     align-content: center;
     align-items: center;
 }
