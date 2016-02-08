@@ -3,6 +3,11 @@
     font-size: 1em;
     
 }
+pre{
+    width: 400px;
+    margin: 5pt;
+    
+}
 .Green{
     color: #59A650;
 }
@@ -107,12 +112,13 @@
     padding-top: 2pt;
     padding-left: 5pt;
     width: 100%;
+    min-height: 50vh;
     height: 70vh;
     flex-flow: row;
     display: flex;
     flex-wrap: wrap;
-    justify-content:flex-start;
-    align-items: center;
+    justify-content:center;
+    align-items: flex-start;
     align-content: flex-start;
     color: white;
 
@@ -120,6 +126,11 @@
     border-top: solid white 2pt;
 
     background-color: rgba(0, 0, 0, 0.6); 
+}
+#SummarySection{
+    min-width: 75%;
+    padding: 10pt;
+    text-align: center;
 }
 #Contact_Page{
     font-size: 1em;
@@ -226,7 +237,6 @@
     color: #fff;
 }
 /*end Typing cursor thing*/
-pre{
-    width: 400px;
+#TopIcons{
     
 }
