@@ -42,7 +42,7 @@
                             <div class="Nav_Tab_STATIC">陳宇豐</div>
                             <div>Anthony Chan<br><div class="Comment_Small">Computer Systems Engineer '18</div></div>
                             </div>
-                            <div>hell</div>
+                            <div id="TopIcons"></div>
                             <div id="QOTD_Container" class="Green"></div>
                         </div>
 
@@ -137,7 +137,7 @@
                  <h1>[Under Construction, but feel free to stay?]<hr></h1>
                      <p></p>
                  </div>
-                 
+<!--JAVA SECTION-->
                  <div>
                      Java
                  <pre id="CodeBox">
@@ -148,18 +148,23 @@ public static void main(args[0]){
 }
                  </pre>
                  </div>
+<!--///////////////////////////-->
                  
-                 <div>
+                 
+<!--JAVASCRIPT SECTION-->
+                 <div> 
                      JavaScript
                  <pre>
-public static void main(args[0]){ 
-        <div class="typed">
-                    <span>Sy('<span class="type"></span>');</span>      
-        </div>
-}
+myFireBase.on("child_added", function(snapshot, prevChildKey){
+    var newWebsite = snapchot.val();
+    $("#above_div").append(<div class="typed"><span><span class="JStype"></span></span></div>);
+});
                  </pre>
                  </div>
+<!--///////////////////////////-->
                  
+                 
+<!--ASSEMBLY SECTION-->
                  <div>
                      Assembly
                  <pre>
@@ -170,6 +175,7 @@ public static void main(args[0]){
 }
                  </pre>
                  </div>
+<!--///////////////////////////-->
             </div>
             
         </div>
@@ -193,10 +199,26 @@ public static void main(args[0]){
                         // time before backspacing
                         backDelay: 500,
                         // loop
+                        loop: true
+                        // false = infinite
+                      });
+                      
+                      $(".JStype").typed({
+                        strings: ["<div class='j_noSelect tab' value='newWebsite.url + j"],
+                        typeSpeed: 200,
+                          // time before typing starts
+                        startDelay: 0,
+                        // backspacing speed
+                        backSpeed: 500,
+                        // time before backspacing
+                        backDelay: 500,
+                        // loop
                         loop: true,
                         // false = infinite
                       });
+                      
                   });
+            
                 </script>
         
             
